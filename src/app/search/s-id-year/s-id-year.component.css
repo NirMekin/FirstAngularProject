@@ -1,0 +1,43 @@
+
+.input-group{
+  width:45%;
+  float: left;
+  margin-right: 5%;
+}
+
+.myButton{
+  clear: both;
+  width: 100%;
+}
+
+.myButton button{
+  width: 15%;
+  height: 8%;
+  margin-top:5%;
+}
+
+.myDiv{
+  display:block;
+}
+
+.myDiv2{
+  display:none;
+}
+
+table{
+  width: 30%;
+}
+
+h4{
+  margin-top: 2.5%;
+}
+.myH4{
+  text-decoration: underline;
+  color: orangered;
+}
+
+
+.homePage{
+  margin-top: 5%;
+  width:30%;
+}

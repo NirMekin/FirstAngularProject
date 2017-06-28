@@ -1,0 +1,14 @@
+
+<div class="page-header">
+  <h1>Welcome To My Site <small>by Nir Mekin</small></h1>
+</div>
+
+<div *ngFor="let _film of films" class="homePage">
+    <div class="list-group">
+      <div class="list-group-item active">
+        {{_film.name}}
+      </div>
+      <div  class="list-group-item">Year - {{_film.year}}</div>
+      <div  class="list-group-item">Genre - {{_film.genre}}</div>
+    </div>
+</div>

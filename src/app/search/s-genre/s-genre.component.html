@@ -1,0 +1,26 @@
+<div class="page-header">
+  <h3>Please Enter parameters and submit <small>(Genre)</small></h3>
+</div>
+<form (ngSubmit) = "onSubmited(f)" #f="ngForm">
+  <div class="input-group">
+    <span class="input-group-addon">YEAR:</span>
+    <input type="text" class="form-control" placeholder="Genre: comedy, action or drama"
+           name="genreInput"
+           ngModel
+           required>
+  </div>
+
+  <div class="myButton">
+    <button class="btn btn-success" type="submit" [disabled]="!f.valid">SUBMIT</button>
+  </div>
+</form>
+
+<div class="homePage"  *ngIf="_disabled">
+  <div class="list-group" *ngFor="let film of films">
+    <div class="list-group-item active">
+      {{film.name}}
+    </div>
+    <div  class="list-group-item">Year - {{film.year}}</div>
+    <div  class="list-group-item">Genre - {{film.genre}}</div>
+  </div>
+</div>

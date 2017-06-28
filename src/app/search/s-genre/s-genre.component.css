@@ -1,0 +1,25 @@
+
+.input-group{
+  width:45%;
+  float: left;
+  margin-right: 5%;
+}
+
+.myButton{
+  clear: both;
+  width: 100%;
+}
+
+.myButton button{
+  width: 15%;
+  height: 8%;
+  margin-top:5%;
+}
+
+.myDiv{
+  display:block;
+}
+
+.myDiv2{
+  display:none;
+}

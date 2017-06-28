@@ -1,0 +1,22 @@
+.GreenBody{
+  background: limegreen;
+  color: wheat;
+}
+
+.mainBody{
+  /*background: linear-gradient(cornflowerblue,whitesmoke,blue,white);*/
+}
+
+.nav-pills{
+  padding:15px 1px;
+ background: whitesmoke;
+}
+
+
+.nav-pills>li{
+  padding: 0px 5px;
+}
+
+a{
+  font-size: 120%;
+}

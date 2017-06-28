@@ -1,0 +1,60 @@
+<div class="page-header">
+  <h3>Please Enter parameters and submit <small>(ID & Year)</small></h3>
+</div>
+<form (ngSubmit) = "onSubmited(f)" #f="ngForm">
+  <div class="input-group">
+    <span class="input-group-addon" >ID:</span>
+    <input type="number" class="form-control" placeholder="ID"
+           name="idInput"
+           ngModel
+           required>
+
+  </div>
+
+  <div class="input-group">
+    <span class="input-group-addon">YEAR:</span>
+    <input type="text" class="form-control" placeholder="Year"
+           name="yearInput"
+           ngModel
+           required>
+  </div>
+
+  <div class="myButton">
+    <button class="btn btn-success" type="submit" [disabled]="!f.valid">SUBMIT</button>
+  </div>
+</form>
+
+<div class="homePage"  *ngIf="_disabled">
+    <div class="list-group">
+      <div class="list-group-item active">
+        {{films[0].name}}
+      </div>
+      <div  class="list-group-item">Year - {{films[0].year}}</div>
+      <div  class="list-group-item">Genre - {{films[0].genre}}</div>
+    </div>
+</div>
+
+<div *ngIf="!_disabled" class="myTable">
+  <div>
+    <h4 [ngClass]="{myH4:_test}">Examples</h4>
+    <table class="table table-striped">
+      <thead>
+      <tr>
+        <th>ID</th>
+        <th>YEAR</th>
+      </tr>
+      </thead>
+      <tbody>
+      <tr>
+        <td>3</td>
+        <td>1999</td>
+      </tr>
+      <tr>
+        <td>1</td>
+        <td>1994</td>
+      </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
