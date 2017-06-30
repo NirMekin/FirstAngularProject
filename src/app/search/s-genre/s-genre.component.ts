@@ -20,8 +20,9 @@ export class SGenreComponent implements OnInit {
   ngOnInit() {
   }
 
-  onSubmited(form:NgForm){
-    this._genre=form.value.genreInput;
-  }
+  //Can't make this method API not working for this route
+  // onSubmited(form:NgForm){
+  //   this._genre=form.value.genreInput;
+  // }
 
 }

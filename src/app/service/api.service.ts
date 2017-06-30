@@ -34,14 +34,12 @@ export class APIService {
       .catch(this.handleError);
   }
   private extractData(res: Response) {
-    console.log(res);
     let body = res.json();
     console.log(body.genres);
     return body.genres || { };
   }
 
   private extractData2(res: Response) {
-    console.log(res);
     let body = res.json();
     console.log(body.movies);
     return body.movies || { name:"Not Valid"};

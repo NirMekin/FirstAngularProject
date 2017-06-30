@@ -46,9 +46,6 @@ export class SIdYearComponent implements OnInit {
           console.log("Error MSG:\n"+err);
         }
       );
-
-
-    // this.idAdded.emit(idIsAdded)
   }
 
 }
